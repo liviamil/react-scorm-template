@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# React-SCORM Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This template is designed for React apps to work with the SCORM wrapper, providing a flexible foundation for e-learning modules and/or games to be deployed on Learning Management Systems.
 
-## Available Scripts
+## How To Use
 
-In the project directory, you can run:
+### `git clone` this repository into local
 
-### `npm start`
+Edit the files under `src` and update the React app accordingly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm run build` and configure
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Once done with edits, run the command to build the app for production, results are stored in the `build` folder.\
+Under the `build` folder, run `index.html` with a live server to check if it's SCORM ready.\
+\
+**debug:** If website is empty, check the path for `<script>` in `index.html`. It should be `./static/...` instead of `/static/...`
 
-### `npm test`
+### Check with SCORM Cloud
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Compress the build folder into a zipped file and upload itu to [SCORM Cloud]([url](https://app.cloud.scorm.com/)) to test if it works.\
+Create a trial account if you don't already have one.\
+Once uploaded, launch the course.\
+You are expected to see your name.\
+<img width="1464" alt="Screenshot 2024-06-04 at 2 39 38 PM" src="https://github.com/liviamil/protect-your-device/assets/96341083/d7372ff4-6c33-49f2-8c03-cbea01b8fc08">
 
-### `npm run build`
+And a 100% Score.\
+<img width="1129" alt="Screenshot 2024-06-04 at 2 40 09 PM" src="https://github.com/liviamil/protect-your-device/assets/96341083/db127c19-e0bd-4a9e-ac38-91ddb14398c8">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## References
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/).\
+This project references [create-react-scorm-app](https://github.com/simondate/create-react-scorm-app) from [@simondate](https://github.com/simondate)
