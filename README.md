@@ -20,8 +20,6 @@ Make changes to the React app within the `src` folder and run `npm start` to dev
 
 Once done with development, run the command to build the app for production, results are stored in the `build` folder.\
 Under the `build` folder, run `index.html` with a live server to check if it's SCORM ready.\
-\
-**debug:** If website is empty, check the path for `<script>` in `index.html`. It should be `static/...` instead of `/static/...`
 
 ### Check with SCORM Cloud
 
