@@ -8,12 +8,20 @@ This template is designed for React apps to work with the SCORM wrapper, providi
 
 Edit the files under `src` and update the React app accordingly.
 
+### run `npm install` to install dependencies
+
+Install the dependencies needed for the app.
+
+### run `npm start` for local development
+
+Make changes to the React app within the `src` folder and run `npm start` to develop locally.
+
 ### `npm run build` and configure
 
-Once done with edits, run the command to build the app for production, results are stored in the `build` folder.\
+Once done with development, run the command to build the app for production, results are stored in the `build` folder.\
 Under the `build` folder, run `index.html` with a live server to check if it's SCORM ready.\
 \
-**debug:** If website is empty, check the path for `<script>` in `index.html`. It should be `./static/...` instead of `/static/...`
+**debug:** If website is empty, check the path for `<script>` in `index.html`. It should be `static/...` instead of `/static/...`
 
 ### Check with SCORM Cloud
 
